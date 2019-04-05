@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <title>Chloe Clark's Doodle Board</title>
-
-
-
+    <script  src="https://clarkchloe.github.io/assn6revise/jscolor.js"></script>
     <style>
       body {
         background-color: #d8e7ff;
@@ -24,6 +22,11 @@
         text-align: center;
         font-family: 'Anton', sans-serif;
       }
+      @media only screen and (min-width: 600px) {
+         .jscolor {
+            display: none;
+          }
+      }
     </style>
   </head>
 
@@ -33,6 +36,7 @@
     <canvas id="myCanvas">
       Your browser does not support the HTML5 canvas tag.
     </canvas>
+    <input class="jscolor" value="ab2567">
       <script>
 
         var canvas = document.querySelector('canvas');
