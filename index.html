@@ -63,7 +63,7 @@
         window.addEventListener('mousemove', function (e) {
           console.log(e.pageX);
           console.log(e.pageY);
-          x = e.pageX - cTop;
+          x = e.pageX - cTop*2;
           y = e.pageY - cTop;
           draw();
         })
