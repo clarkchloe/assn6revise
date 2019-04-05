@@ -39,6 +39,8 @@
         var y = 50
         var radius = 20;
         var color = "red"
+        var cTop = canvas.offsetTop;
+        console.log("This is the offset " + cTop);
 
         function canvasSize() {
           canvas.width = 0.80*window.innerWidth;
@@ -61,16 +63,16 @@
         window.addEventListener('mousemove', function (e) {
           console.log(e.pageX);
           console.log(e.pageY);
-          x = e.pageX;
-          y = e.pageY;
+          x = e.pageX - cTop;
+          y = e.pageY - cTop;
           draw();
         })
 
         window.addEventListener('touchmove', function (e) {
           console.log(e.pageX);
           console.log(e.pageY);
-          x = e.pageX;
-          y = e.pageY;
+          x = e.pageX - cTop;
+          y = e.pageY - cTop;
           draw();
         })
         
